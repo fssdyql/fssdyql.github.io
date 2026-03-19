@@ -1,84 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FSSDYQL | Null | 个人主页</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Kanit:wght@400;600;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        darkMode: 'class', // Enable class-based dark mode
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['"Noto Sans SC"', 'sans-serif'],
-              mono: ['"JetBrains Mono"', 'monospace'],
-              heading: ['"Kanit"', 'sans-serif'], // New, clean, geometric heading font
-            },
-            colors: {
-              'void-black': '#050505',
-              'void-gray': '#121212',
-              'light-bg': '#f3f4f6', 
-              'accent-cyan': '#00f2ea',
-              'accent-purple': '#ff00ff',
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      /* Hide scrollbar */
-      .no-scrollbar::-webkit-scrollbar { display: none; }
-      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      
-      body { margin: 0; padding: 0; cursor: none; /* Hide default cursor for custom one */ }
-      
-      /* Mobile optimization: Show default cursor on touch devices */
-      @media (hover: none) and (pointer: coarse) {
-        body { cursor: auto; }
-      }
-
-      /* Click Animation Keyframes - Fixed Centering */
-      @keyframes ripple {
-        0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
-        100% { transform: translate(-50%, -50%) scale(4); opacity: 0; }
-      }
-      .ripple-effect {
-        position: absolute;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.4);
-        pointer-events: none;
-        z-index: 9999;
-        animation: ripple 0.6s linear forwards;
-      }
-      html.dark .ripple-effect {
-        background: rgba(255, 255, 255, 0.2);
-      }
-    </style>
-
-<link rel="stylesheet" href="/index.css">
-  <script type="importmap">
-{
-  "imports": {
-    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/assets/index-B5D1Ohzt.js"></script>
-</head>
+    <script type="module" crossorigin src="./assets/index-gBLcg3ib.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CbxUEC5X.css">
+  </head>
   <body>
     <div id="root"></div>
-    <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
-    </script>
-</body>
+  </body>
 </html>
+
